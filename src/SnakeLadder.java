@@ -22,8 +22,11 @@ public class SnakeLadder {
                     break;
                 case 2:
                     Player1Position = (Player1Position + Dice);
+                    if(Player1Position >100){
+                        Player1Position =(Player1Position - Dice);
+                        }
                     System.out.println("You Got ladder and your at " + Player1Position);
-                    break;
+                    continue;
                 case 3:
                     Player1Position = (Player1Position - Dice);
 
